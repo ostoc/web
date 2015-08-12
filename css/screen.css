@@ -84,3 +84,20 @@ hr{
 	text-decoration: none;
 }
 
+.btn-cv {
+	line-height: 50px;
+	width: 140px;
+	height: 50px;
+	font-size: 14px;
+	margin: 0 auto;
+	border-radius: 25px;
+	background: green;
+}
+
+.btn-cv a {
+	text-decoration: none;
+	color: white;
+}
+.btn-cv:hover{
+	background: #7ED321;
+}
