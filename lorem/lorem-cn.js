@@ -33,7 +33,7 @@
 
 		minlengthToBreakAfterPunc = 5,
 		//min break between
-		minlengthToNextBreak = 40,
+		minlengthToNextBreak = 10,
 
 		//max break
 		maxlengthToNextBreak = 200;
