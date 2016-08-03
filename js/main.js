@@ -38,4 +38,10 @@ $(document).ready(function(){
 		audio.play();
 	});
 
+  $(".hover").mouseleave(
+    function() {
+      $(this).removeClass("hover");
+    }
+  );
+
 });

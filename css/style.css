@@ -1,3 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+/*@import url(http://yui.yahooapis.com/pure/0.6.0/pure-min.css);*/
+/*@import url(http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css);*/
+
+
 body{
 	/*background: #000;*/
 	font-size: 18px;
@@ -9,11 +16,15 @@ body{
 	font-family: 'PT Sans', sans-serif;
 }
 
+.pure-g-r{
+	display: flex;
+}
+
 p,span,a{
 	font-family: 'PT Sans', sans-serif;
 }
 .wrap{
-	max-width: 1200px;
+	max-width: 1140px;
 	margin: 0 auto;
 	height: auto;
 }
@@ -57,8 +68,10 @@ p,span,a{
 }
 
 .pomo{
+	position: relative;
+	display: block;
 	z-index: 2;
-	padding: 5% 10% 10% 10%;
+	padding: 10%;
 	box-sizing: border-box;
 	background: url("../images/berlin-building.svg") no-repeat bottom -5px right 0;
 	background-size: contain;
@@ -73,6 +86,7 @@ p,span,a{
 .name{
 	font-size: 0.5em;
 	color: #999;
+
 	white-space: nowrap;
 }
 
@@ -142,7 +156,7 @@ p,span,a{
 	line-height: 2em;
 }
 .about-me .text{
-	font-size: 1em;
+	font-size: 1.1em;
 	line-height: 1.5em;
 	color: #555;
 	margin: 20px 0;
@@ -207,14 +221,11 @@ p,span,a{
 .works {
 	padding-bottom: 40px;
 }
-.works .showcase{
-	min-height: 300px;
-	background: #d4d4d4;
-}
 
 .contact{
+	position: relative;
 	border-top: 1px solid #979797;
-	min-height: 450px;
+	min-height: 500px;
 	background: url("../images/contact-circle.svg") no-repeat bottom -50% right -50%;
 	background-size: 60% 60%;
 }
@@ -228,22 +239,45 @@ p,span,a{
 }
 
 .contact .sns{
-	width: 80%;
+	width: 40%;
 	margin: 5% 10%;
 }
 
 .contact .sns ul{
 	list-style: none;
-	font-size: 18px;
-	color: #999;
-	height: 48px;
+	font-size: 2em;
+	
+	/*height: 48px;*/
 	padding: 0;
-	line-height: 48px;
+	/*line-height: 48px;*/
 }
 .contact .sns li{
 	width: 33%;
+	opacity: 0.5;
 	text-indent: none;
 	float: left;
+}
+.contact .sns li:hover{
+	opacity: 0.8;
+
+}
+
+footer{
+	position: absolute;
+	text-align: center;
+	bottom: 20px;
+	left: 0;
+	font-size: 0.8em;
+	opacity: 0.4;
+	width: 100%;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer a:hover{
+	opacity: 0.8;
 }
 
 /* mobile menu animation*/
@@ -360,6 +394,124 @@ p,span,a{
 }
 
 
+/*showcase*/
+
+
+.showcase {
+  font-family: 'Lato', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  padding: 10px 1%;
+  box-sizing: border-box;
+  /*margin: 10px 1%;*/
+  /*width: 100%;*/
+  height: auto;
+  color: #000000;
+  font-size: 1em;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.showcase *,
+.showcase *:before,
+.showcase *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.showcase:before {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  content: '';
+  background-color: #ffffff;
+  opacity: 0;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.showcase img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.showcase figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  padding: 0 20%;
+}
+
+.showcase h3 {
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+}
+
+.showcase p {
+font-size: 1em;
+  margin: 0 0 10px;
+  opacity: 0.6;
+}
+
+.showcase .icons {
+  width: 100%;
+}
+
+.showcase a {
+  margin: 2px;
+  display: inline-block;
+}
+
+.showcase a i {
+  background-color: #333333;
+  border-radius: 3px;
+  color: #000000;
+  display: block;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  width: 34px;
+}
+
+.showcase a i:before {
+  color: #fff;
+}
+
+.showcase a i:hover {
+  background-color: #D2B17F;
+  cursor: pointer;
+}
+
+.showcase:hover:before,
+.showcase.hover:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.showcase:hover figcaption,
+.showcase.hover figcaption {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 1;
+}
 
 
 @media (max-width: 35.5em) {
@@ -380,6 +532,9 @@ p,span,a{
   }
   .mobile-menu{
   	display: block;
+  }
+  .contact .sns{
+  	width: 80%;
   }
   .nav .menu{
   	display: none;
