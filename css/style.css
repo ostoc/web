@@ -269,8 +269,9 @@ footer{
 	bottom: 20px;
 	left: 0;
 	font-size: 0.8em;
-	opacity: 0.4;
+	opacity: 1;
 	width: 100%;
+	text-shadow: 1px 1px 1px #fff;
 }
 
 footer a {
@@ -538,6 +539,9 @@ font-size: 1em;
   }
   .contact .sns{
   	width: 80%;
+  }
+  .contact{
+  	background-size: auto 40%;
   }
   .nav .menu{
   	display: none;
