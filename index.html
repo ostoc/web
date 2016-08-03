@@ -1,76 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<title>Junyu's Simple Portfolio</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	    <meta name="description" content="Demo project with jQuery">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">	
-		<style type="text/css"></style>
-		<link rel="stylesheet" href="css/screen.css">
-		<link rel="stylesheet" href="css/lightbox.css">
-	</head>
-	<body>
-		<div class = "container">
-		<div class = "top">
-			<h1>Junyu Pu</h1>
-			<p> Student at TU Dresden | Master in Computer Science</p>
-			<p> This portfolio created in limited time, may have some errors in IE or Firefox </p>
-			<div class="btn-cv"><a href="pdf/CV_Jpu.pdf">Download CV</a></div>
-		</div>
-		
-		
-		<hr/>
-		<div class = "row">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-			<a class="showbox" href="works/draw_1.jpg" data-lightbox="draw"><img showbox src="works/draw_tum.png"/></a>
-			<a class="showbox_hide" href="works/draw_2.jpg" data-lightbox="draw" ></a>
-			<a class="showbox_hide" href="works/draw_3.jpg" data-lightbox="draw" ></a>
+    <title>Junyu Pu</title>
+
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/grids-responsive-min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+
+</head>
+
+<body>
+
+	<div class="pure-g nav wrap">
+		<div class="pure-u-1-3"></div>
+		<div class="pure-u-2-3 menu">
+			<ul>
+				<li><a href="#about">about</a></li>
+				<li><a href="#">résumé</a></li>
+				<li><a href="#works">works</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+		</div>
+		<div class="pure-u-2-3 mobile-menu">
+			<div class="spinner-master">
+  				<input type="checkbox" id="spinner-form"/>
+  				<label for="spinner-form" class="spinner-spin">
+	    			<div class="spinner diagonal part-1"></div>
+	    			<div class="spinner horizontal"></div>
+	    			<div class="spinner diagonal part-2"></div>
+  				</label>
+			</div>
+		</div>
+		<div class="pure-u-1 mobile-menu-list"  id="mobi-menu">
+			<ul>
+				<li><a href="#about">about</a></li>
+				<li><a href="#">résumé</a></li>
+				<li><a href="#works">works</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+		</div>
+	</div>			
+
+	<div class="pure-g banner wrap">
+		<div class="pure-u-1 pomo"> 
+			<p>Hi, this is Junyu <span class="name" id="play-name">/tɕuən-ju/ </span>  <br/> I’m looking for a job in </p>
+			<span class="city-name">Berlin</span>
+		</div>
+		<audio>
+			<source src="media/name.ogg"></source>
+			<source src="media/name.mp3"></source>
+		</audio>
+		<div class="pure-u-1 clouds">
+				<div class="cloud x1"></div>
+				<div class="cloud x2"></div>
+		</div>
 			
-			<a class="showbox" href="video.html" ><img showbox src="works/stop_motion_tum.png"/></a>
-
-			<a class="showbox" href="works/web_1.png" data-lightbox="web"><img showbox src="works/web_tum.jpg"/></a>
-			<a class="showbox_hide" href="works/web_2.png" data-lightbox="web" ></a>
-			<a class="showbox_hide" href="works/web_3.png" data-lightbox="web" ></a>
-			<a class="showbox_hide" href="works/web_4.png" data-lightbox="web" ></a>
-
-			
-		</div>
-		<div class ="row">
-
-			<a class="showbox" href="works/logo_1.png" data-lightbox="logo"><img showbox src="works/logo_tum.png"/></a>
-			<a class="showbox_hide" href="works/logo_2.png" data-lightbox="logo" ></a>
-			<a class="showbox_hide" href="works/logo_3.png" data-lightbox="logo" ></a>
-			
-
-			<a class="showbox" href="works/3d_1.png" data-lightbox="3d"><img showbox src="works/3d_tum.png"/></a>
-			<a class="showbox_hide" href="works/3d_2.jpg" data-lightbox="3d" ></a>
-		
-			<a class="showbox" href="works/search.jpg" data-lightbox="search"><img showbox src="works/search_tum.png"/></a>
-
-		</div>
-
-		<div class ="row">
-		
-			<a class="showbox" href="works/web_video.jpg" data-lightbox="search"><img showbox src="works/web_video_tum.png"/></a>
-
-			<a class="showbox" href="works/t_shirt_1.png" data-lightbox="t_s"><img showbox src="works/t_shirt_tum.png"/></a>
-			<a class="showbox_hide" href="works/t_shirt_o.jpg" data-lightbox="t_s" ></a>
-
-			<a class="showbox" href="works/magazine_1.png" data-lightbox="mg"><img showbox src="works/magazine_tum.png"/></a>
-			<a class="showbox_hide" href="works/magazine_2.png" data-lightbox="mg" ></a>
-
-
-		</div>
-
-
-
 
 	</div>
+	<a name="about"></a>
+	<div class="pure-g about">
+		<div class="pure-u-1 wrap">
+			<div class="about-me" id="des">
+				<div class="title">about</div>
+				<div class="text" > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis sapien magna, ac malesuada nisi porttitor in. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam fermentum dapibus massa vel euismod. Aliquam aliquam et metus quis interdum. Donec placerat, dui non tincidunt interdum, elit dui mattis tellus, ac lobortis risus orci egestas dolor. Praesent consequat libero et ante fermentum, sed scelerisque erat ultricies. Nullam vel luctus nisl. Donec iaculis egestas ornare.</div>		
+			</div>
+			<div class="atc-button">
+				<div class="title" id="hb-title">Tegeler See</div>
+				<div class="resume">résumé</div>
+				<div class="more-less" id="mole">-</div>
+			</div>
+		</div>
+		<div class="video-bg">
+			 <video loop muted autoplay poster="images/video-bg.jpg" class="fullbg-video">
+       			<source src="media/w.mp4" type="video/mp4">
+    		</video>
+		</div>
+	</div>
 
-	</body>
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="js/lightbox.js"></script>
+	<div class="pure-g works wrap">
+	<a name="works"></a>
+		<div class="pure-u-1 divider">works</div>
+		<div class="pure-u-1 pure-u-md-1-2 showcase">heheh</div>
+		<div class="pure-u-1 pure-u-md-1-2 showcase">googd</div>
+		<div class="pure-u-1 pure-u-md-1-2 showcase">lalal</div>
+		<div class="pure-u-1 pure-u-md-1-2 showcase">dou</div>
+	</div>
+	
+	<div class="pure-g contact">
+	<a name="contact"></a>
+		<div class="pure-u-1 wrap">
+			<div class="pure-u-1 divider">contact</div>
+			<span class="email">pujunyu@gmail.com</span>
+			<div class="sns">
+				<ul>
+					<li>LinkedIn</li>
+					<li>GitHub</li>
+					<li>Instagram</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
 
+</body>
 </html>
