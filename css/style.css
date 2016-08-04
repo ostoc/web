@@ -460,6 +460,18 @@ footer a:hover{
   padding: 0 20%;
 }
 
+.showcase span{
+	background: #C2B800;
+	color: #fff;
+	opacity: 1;
+	font-size: 0.8em;
+	line-height: 1.2em;
+	border-radius: 1em;
+	margin: 0.5em 0;
+	padding: 5px 10px;
+	box-sizing: border-box;
+}
+
 .showcase h3 {
   margin: 0 0 6px;
   text-transform: uppercase;
