@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Cabin|Lato|Signika);
 @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 @import url(http://yui.yahooapis.com/pure/0.6.0/pure-min.css);
@@ -8,12 +8,12 @@
 body{
 	/*background: #000;*/
 	font-size: 18px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Cabin', sans-serif;
 }
 
 .pure-g [class *= "pure-u"],
 .pure-g-r [class *= "pure-u"] {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Cabin', sans-serif;
 }
 
 .pure-g-r{
@@ -21,7 +21,7 @@ body{
 }
 
 p,span,a{
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Cabin', sans-serif;
 }
 .wrap{
 	max-width: 1140px;
@@ -41,7 +41,7 @@ p,span,a{
 	box-sizing: border-box;
 	font-size: 1em;
 	color: #999;
-	font-family: 'PT Sans', sans-serif;
+	/*font-family: 'Cabin', sans-serif;*/
 }
 
 .nav .menu ul{
@@ -137,30 +137,40 @@ p,span,a{
 	position: relative;
 	float: left;
 	z-index: 9;
-	background: #fff;
+	background: #fcfcfc;
 	width: 60%;
-	padding: 5% 10%;
+	padding: 5% 8% 5% 10%;
 	margin-top: 80px;
 	min-height: 400px;
+	/*border-top: 5px solid #1C6DA9;*/
 	box-sizing: border-box;
 }
 
+.about-me hr{
+	border: 0;
+	border-top: 1px solid #ddd;
+	padding: 20px;
+}
 .about-me .title{
 	font-size: 2em;
 	line-height: 2em;
 }
-.about-me .text{
-	font-size: 1.1em;
-	line-height: 1.5em;
-	color: #555;
-	margin: 20px 0;
+.about-me .text p{
+	font-size: 1em;
+	line-height: 1.3em;
+	color: rgba(0,0,0,0.7);
+	margin: 20px 0 30px 0;
+	font-family: 'Signika';
+}
+.about-me i{
+	color: #ff3535;
 }
 
 .atc-button{
 	position: relative;
 	float: left;
 	margin-bottom: 80px;
-	background: #fff;
+	background: #fcfcfc;
 	height: 54px;
 	width: 60%;
 	line-height: 54px;
@@ -179,7 +189,7 @@ p,span,a{
 }
 .atc-button .more-less:hover{
 	cursor: pointer;
-	background: #094470
+	background: #094470;
 }
 .atc-button .title{
 	/*padding-left: 10%;*/
@@ -188,19 +198,24 @@ p,span,a{
 	float: left;
 	display: none;
 }
-.atc-button .resume{
-	width: 162px;
-	float: right;
-	text-align: center;
-	color: #fff;
-	height: 54px;
-	padding-left: 24px;
+.resume{
+	width: 30%;
+	float: left;
+	text-align: left;
+	color: #ff3535;
+	font-family: 'Signika';
+	font-size: 1em;
 	box-sizing: border-box;
-	background: url("../images/btn-download.svg") no-repeat top 14px left 20px #439DE0;
+	/*background: url("../images/btn-download.svg") no-repeat top 14px left 20px #439DE0;*/
+	/*background:  #439DE0;*/
+
 }
-.atc-button .resume:hover{
+.resume:hover{
 	cursor: pointer;
-	background: url("../images/btn-download.svg") no-repeat top 14px left 20px #FC3535;
+	color: #000;
+	/*outline: 0;*/
+	/*border-bottom: 3px solid #FFEB3B;*/
+	box-shadow:inset 0px 1em 0px #b4e7f8;
 }
 
 .divider{
