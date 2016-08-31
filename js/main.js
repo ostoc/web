@@ -1,12 +1,28 @@
 $(document).ready(function(){
-      function isIEorEDGE(){
-      return navigator.appName == 'Microsoft Internet Explorer' || (navigator.appName == "Netscape" && navigator.appVersion.indexOf('Edge') > -1);
-      };
+  // function isIEorEDGE(){
+  //   if (navigator.appName == 'Microsoft Internet Explorer'){
+  //     return true; // IE
+  //   }
+  //   else if(navigator.appName == "Netscape"){                       
+  //    return navigator.appVersion.indexOf('Edge') > -1; // EDGE
+  //   }       
+  //   return false;
+  // };
 
-      if (isIEorEDGE()) {
+
+  function isieEdge(){
+    // var rv = 0;
+    if (navigator.appVersion.indexOf('Trident') > -1) {
+      return 1;
+    }else if(navigator.appVersion.indexOf('Edge') > -1){
+      return 2; 
+    }
+    return 0;
+  }  
+  
+  if (isieEdge()) {
         $("#alert").css("display","block");
-      };
-
+  };
 
 	var flag = 0;
 
