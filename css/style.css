@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Cabin|Lato|Signika);
-@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans);
-@import url(http://yui.yahooapis.com/pure/0.6.0/pure-min.css);
-@import url(http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css);
+@import url(https://fonts.googleapis.com/css?family=Cabin|Lato);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+/*@import url(https://fonts.googleapis.com/css?family=PT+Sans);*/
+@import url(https://cdn.jsdelivr.net/pure/0.6.0/pure-min.css);
+@import url(https://cdn.jsdelivr.net/pure/0.6.0/grids-responsive-min.css);
 
 
 body{
@@ -160,7 +160,7 @@ p,span,a{
 	line-height: 1.3em;
 	color: rgba(0,0,0,0.7);
 	margin: 20px 0 30px 0;
-	font-family: 'Signika';
+	font-family: 'Lato';
 }
 .about-me i{
 	color: #ff3535;
@@ -203,7 +203,7 @@ p,span,a{
 	float: left;
 	text-align: left;
 	color: #ff3535;
-	font-family: 'Signika';
+	/*font-family: 'Signika';*/
 	font-size: 1em;
 	box-sizing: border-box;
 	/*background: url("../images/btn-download.svg") no-repeat top 14px left 20px #439DE0;*/
@@ -507,10 +507,12 @@ font-size: 1em;
 
 .showcase a {
   margin: 2px;
+  text-decoration: none;
   display: inline-block;
 }
 
 .showcase a i {
+	text-decoration: none;
   background-color: #333333;
   border-radius: 3px;
   color: #000000;
