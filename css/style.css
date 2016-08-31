@@ -362,6 +362,7 @@ footer a:hover{
     background: #ff3535;
     color: #fff;
     text-align: center;
+    display: none;
 }
 
 

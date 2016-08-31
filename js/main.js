@@ -1,4 +1,13 @@
 $(document).ready(function(){
+      function isIEorEDGE(){
+      return navigator.appName == 'Microsoft Internet Explorer' || (navigator.appName == "Netscape" && navigator.appVersion.indexOf('Edge') > -1);
+      };
+
+      if (isIEorEDGE()) {
+        $("#alert").css("display","block");
+      };
+
+
 	var flag = 0;
 
     $("#mole").click(function () {
@@ -22,7 +31,7 @@ $(document).ready(function(){
 
     $("#spinner-form").click(function(){
      	var mobi_display = $('#mobi-menu').css("display");
-     	console.log(mobi_display);
+     	// console.log(mobi_display);
      	if (mobi_display == "none"){
      		$("#mobi-menu").css("display","block");
      		// console.log("good");
@@ -37,6 +46,9 @@ $(document).ready(function(){
 	$("#play-name").click(function(){
 		audio.play();
 	});
+
+
+
 
   // $(".hover").mouseleave(
   //   function() {
