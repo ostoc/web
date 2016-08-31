@@ -351,6 +351,19 @@ footer a:hover{
 .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-2 {transform:rotate(-405deg);-webkit-transform:rotate(-405deg);margin-top:-16px;}
 
 
+/*Alert*/
+
+
+.alert {
+    position: relative;
+    z-index: 888;
+    height: auto;
+    padding: 15px;
+    background: #ff3535;
+    color: #fff;
+    text-align: center;
+}
+
 
 /*Animation*/
 
