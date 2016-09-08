@@ -17,7 +17,7 @@ title: Junyu's Blog
 email: pujunyu@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   About Design and Develop
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 #url: "https://pujunyu.github.io" # the base hostname & protocol for your site
 twitter_username: pujunyu
 github_username:  pujunyu
