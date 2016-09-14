@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <title>romeo</title>
+
+  </head>
+  <body>
+    <div id="app">
+    	<profile></profile>
+    	{{random}}
+    	
+    </div>
+    
+
+    <template id="profile">
+     
+    <div class="profile" @click="enlarge">
+    	
+    	<img src = "{{items.items[i].preview_pic.url}}"" @error="imageLoadOnError" />
+  
+    	<div class="desc">
+    		<div class="username">{{items.items[i].name}}</div>
+    		<div class="indicator"><span class="indicator" v-bind:class="[isOffline?'red':'green']"></span>{{items.items[i].online_status}}</div>
+    		<div class="headline">{{items.items[i].headline}}</div>
+    	</div>
+    </div>
+    <div class="large" v-show="large" @click="enlarge" >
+    	<img src = "{{items.items[i].preview_pic.url}}"" @error="imageLoadOnError" />
+    </div>
+    <div class="control" v-show="!match">
+    	<div class="button like" @click = "like"> <i class="fa fa-heart"></i> </div>
+    	<div class="button dislike" @click = "dislike"> <i class="fa fa-thumbs-down" aria-hidden="true"></i> </div>
+    </div>
+
+    <div class="detail" v-show="match" @click = "dismiss">
+    <div class="detail-avatar"><img src ="./default.svg"></div>
+    <div class="detail-avatar r"><img src = "{{items.items[i].preview_pic.url}}"" @error="imageLoadOnError"></div>
+    	<div class="match-message">You got a new match!</div>
+    </div>
+	</template>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/main.js"></script>
+
+   
+  </body>
+<script>
+	new Vue({
+  	el: '#app',
+  });
+
+</script>
+  
+</html>
