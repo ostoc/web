@@ -146,7 +146,17 @@ input{
         float: left;
         box-sizing: border-box;
         width: 33.3%;
-    } 
+    }
+    .r{
+        padding-right:4px; 
+    }  
+    .m{
+        padding: 0 4px; 
+    }  
+    .l{
+        padding-left: 0 4px; 
+    }
+
 
 }
 
@@ -166,6 +176,16 @@ input{
         width: 40%;
     }
 
+    .r{
+        padding-right:4px; 
+    }  
+    .m{
+        padding: 0 4px; 
+    }  
+    .l{
+        padding-left: 0 4px; 
+    }
+
     .g-1-4{
         float: left;
         box-sizing: border-box;
@@ -180,7 +200,7 @@ input{
         font-size: 0.8em;
     }
     .guests {
-        height: 22px;
+        height: 23px;
     }
     .g-icon{
         float: none;
@@ -191,4 +211,32 @@ input{
     }
 
 
+}
+
+@media (max-width: 319px){
+    .r{
+        padding: 0; 
+    }  
+    .m{
+        padding: 0; 
+    }  
+    .l{
+        padding: 0; 
+    }
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .wrap{
+        min-width: 235px;
+    }
+    .date{
+        font-size: 0.8em;
+    }
+    .g-s-1{
+        margin-top: 8px;
+        float: left;
+        box-sizing: border-box;
+        width: 100%;
+    }
 }
