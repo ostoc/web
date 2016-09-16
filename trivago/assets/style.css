@@ -3,15 +3,17 @@ body{
     padding:16px;
     font-size: 16px;
     font-family: 'arial';
-
 }
 
 .wrap{
-    float: left;
+    display: table;
+    text-align: center;
     clear: both;
     max-width: 1280px;
     width: 100%;
+    height: auto;
     margin: 0 auto;
+    text-align: left;
     padding: 16px;
     box-sizing: border-box;
     height: auto;
