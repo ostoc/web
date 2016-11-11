@@ -235,34 +235,74 @@ p,span,a{
 	position: relative;
 	border-top: 1px solid #979797;
 	min-height: 500px;
-	background: url("../images/contact-circle.svg") no-repeat bottom -30% right -10%;
-	background-size: auto 60%;
 }
-.contact .email{
+.contact form{
 	color: #ff3535;
-	border-bottom: 4px solid #ff3535;
-	/*width: 60%;*/
+	width: 60%;
 	line-height: 2em;
 	margin-left: 10%;
-	font-size: 2em;
+	font-size: 1.2em;
 }
 
+.contact .recipient-email{
+	width: 100%;
+	border: 0;
+	line-height: 1em;
+	padding: 0.5em 1em;
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.1);
+	border-radius: 5px;
+}
+
+.contact textarea{
+	box-sizing: border-box;
+	width: 100%;
+	border: 0;
+	padding: 1em;
+	background: rgba(0,0,0,0.1);
+	border-radius: 5px;
+}
+
+.contact label{
+	font-style: italic;
+  width: 100%;
+  /*padding-top: 2em;*/
+}
+.contact form p {
+  width: 100%;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: rgba(0,0,0,0.5);
+}
+
+.contact .sendmail{
+	background: #ff3535;
+	border: 0;
+	float: right;
+	padding: 0.5em 1em;
+	color: #fff;
+	border-radius: 5px;
+}
 .contact .sns{
-	width: 40%;
+	width: 80%;
+	text-align: center;
 	margin: 5% 10%;
+	float: left;
 }
 
 .contact .sns ul{
 	list-style: none;
 	font-size: 2em;
-	
-	/*height: 48px;*/
-	padding: 0;
+	float: left;
+	width: 50%;
+	margin: 4% 25%;
+	padding:0;
 	/*line-height: 48px;*/
 }
 .contact .sns li{
 	width: 33%;
 	opacity: 0.5;
+	text-align: center;
 	text-indent: none;
 	float: left;
 }
@@ -278,11 +318,22 @@ p,span,a{
 
 }
 
+.mail-message {
+  width: 80%;
+  margin: 10% 10%;
+  padding: 10%;
+  box-sizing: border-box;
+  font-size: 3em;
+}
+.mail-message button{
+  color: #ff3535;
+  border: 0;
+  background: #fff;
+  border-bottom: 4px solid #ff3535; 
+}
 footer{
-	position: absolute;
 	text-align: center;
-	bottom: 20px;
-	left: 0;
+	height: 50px; 
 	font-size: 0.8em;
 	opacity: 1;
 	width: 100%;
@@ -296,6 +347,13 @@ footer a {
 
 footer a:hover{
 	opacity: 0.8;
+}
+
+.background-circle {
+	height: 300px;
+	position: absolute;
+	background: url("../images/contact-circle.svg") no-repeat bottom -30% right -10%;
+	background-size: auto 60%;
 }
 
 /* mobile menu animation*/
@@ -560,10 +618,27 @@ font-size: 1em;
   opacity: 1;
 }
 
+@media (max-width: 48em) {
+  .contact form{
+	  width: 80%;
+  }
+  .mail-message {
+    font-size: 1.5em; 
+  }
+  .sendmail{
+	  width: 100%;
+	  box-sizing: border-box;
+  }
+}
 
 @media (max-width: 35.5em) {
   body{
     font-size: 14px;
+  }
+  .mail-message {
+    font-size: 1.5em;
+    padding: 10%;
+    margin: 30% 10%;
   }
   .pomo{
   	padding-bottom: 100px;
@@ -580,9 +655,7 @@ font-size: 1em;
   .mobile-menu{
   	display: block;
   }
-  .contact .sns{
-  	width: 80%;
-  }
+
   .contact{
   	background-size: auto 40%;
   }
