@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Merry Christmas</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="description" content="Demo project">
+		<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable = no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<style type="text/css">
+			body{
+				background: #e2e2e2;
+			}
+			.warp{
+				width: 100%;
+				height: 1800px;
+				margin: 0 auto;
+				position: relative;
+				border-bottom: 10px solid #999;
+			}
+			.chemy{
+				background: url("Chemy@2x.png") center no-repeat;
+				width: 100%;
+				height: 160px;
+				float: left;
+				position: absolute;
+				top: 340px;
+				z-index: 0;
+			}
+			.santa{
+				background: url('Santa@2x.png') top no-repeat;
+				width: 100%;
+				height: 454px;
+				position: absolute;
+				top: 30px;
+				z-index: 1;
+
+			}
+			.people{
+				background: url('olive.png') top no-repeat;
+				width: 100%;
+				float: left;
+				position: absolute;
+				top: 120px;
+				height: 646px;
+				z-index: -2;
+			}
+			.chemy_body{
+				width: 450px;
+				height: 500px;
+				background: #466100;
+				position: relative;
+				top: 350px;
+				z-index: -1;
+				margin: 0 auto;
+				border-radius: 25px;
+			}
+			.regards{
+				width: 450px;
+				height: 120px;
+				font-color: #fff;
+				font-size: 40px;
+				margin: 0 auto;
+				position: relative;
+				top: 420px;
+				z-index: -4;
+				text-align: center;
+				opacity: 0;
+				background: url('regards.png') no-repeat center;
+			}
+			.footer{
+				width: 450px;
+				z-index: 9;
+				height: 30px;
+				color: #fff;
+				margin: 0 auto;
+				position: relative;
+				bottom: -170px;
+				text-align: center;
+				font-size: 24px;
+			}
+			.bg{
+				width: 100%;
+				background: url('background.png') center no-repeat;
+				height: 600px;
+				z-index: -99;
+				position: absolute;
+				bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "warp">
+	
+			<div class = "chemy"></div>
+			<div class = "chemy_body"></div>
+			<div class = "santa"></div>
+			<div class = "people"></div>
+			<div class = "bg"></div>
+			<div class = "regards">	</div>
+			<div class = "footer">Scorll Down</div>
+		<div>
+	</body>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		//js goes here
+	$(window).on('beforeunload', function(){
+	    $(window).scrollTop(0);
+	});
+	$(window).scroll(function(e){
+
+ 		 //get scroll position
+ 		 var topWindow = $(window).scrollTop();
+ 		 var opacity_animate = topWindow / 250;
+ 		 opacity_animate = 1 - opacity_animate;
+ 		 // console.log(opacity_animate);
+ 		if (topWindow > 50) {
+		  	// $('.santa').css('opacity', opacity_animate);
+		  	$('.santa').animate({opacity:0}, 400);
+		  	// $('.people').css('top', topWindow + 100)
+		  	$('.people').animate({top: 1100},300);
+		}
+		if (topWindow > 600) {
+			$('.regards').css('opacity', 1);
+			$('.footer').text('To Oliver:');
+		};
+	});
+
+
+
+	</script>
+</html>
