@@ -233,8 +233,7 @@ p,span,a{
 
 .contact{
 	position: relative;
-	border-top: 1px solid #979797;
-	min-height: 500px;
+	border-top: 1px solid #f2f2f2;
 }
 .contact form{
 	color: #ff3535;

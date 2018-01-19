@@ -1,210 +1,233 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>I'm Junyu Pu</title>
-		<link rel="stylesheet" href="css/style.css">
-		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-		<script src="js/main.js"></script>
-
-	</head>
-	<body>
-		
-		<div id="alert" class="alert">
-		Sorry, I don't use PC, cannot test this page on IE or Edge. Please use Chrome, Safari or Firefox for best experience.</div>
-		
-
-		<div class="nav">
-			<div class="pure-g wrap">
-				<div class="pure-u-1-3"></div>
-				<div class="pure-u-2-3">
-					<div class="menu"><ul>
-						<li><a href="#about">about</a></li>
-						<li><a href="media/CV_Jpu.pdf" target="_blank">résumé</a></li>
-						<li><a href="#works">projects</a></li>
-						<li><a href="#contact">contact</a></li>
-					</ul>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>I'm Junyu Pu</title>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+  </script>
+  <script src="js/main.js">
+  </script>
+</head>
+<body>
+  <div class="alert" id="alert">
+    Sorry, I don't use PC, cannot test this page on IE or Edge. Please use Chrome, Safari or Firefox for best
+    experience.
+  </div>
+  <div class="nav">
+    <div class="pure-g wrap">
+      <div class="pure-u-1-3"></div>
+      <div class="pure-u-2-3">
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#about">about</a>
+            </li>
+            <li>
+              <a href="media/CV_Jpu.pdf" target="_blank">résumé</a>
+            </li>
+            <li>
+              <a href="#works">projects</a>
+            </li>
+            <li>
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div class="mobile-menu">
+          <div class="spinner-master">
+            <input id="spinner-form" type="checkbox"> <label class="spinner-spin" for="spinner-form"></label>
+            <div class="spinner diagonal part-1">
+              <label class="spinner-spin" for="spinner-form"></label>
+            </div>
+            <div class="spinner horizontal">
+              <label class="spinner-spin" for="spinner-form"></label>
+            </div>
+            <div class="spinner diagonal part-2">
+              <label class="spinner-spin" for="spinner-form"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pure-u-1" style="z-index:99">
+        <div class="mobile-menu-list" id="mobi-menu">
+          <ul>
+            <li>
+              <a href="#about">about</a>
+            </li>
+            <li>
+              <a href="media/CV_Jpu.pdf" target="_blank">résumé</a>
+            </li>
+            <li>
+              <a href="#works">projects</a>
+            </li>
+            <li>
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!-- end navi -->
+  <div class="banner">
+    <div class="pure-g wrap">
+      <div class="pure-u-1 pomo">
+        <p>Hi, this is Junyu <span class="name" id="play-name">/tɕuən-ju/ <a><i class=
+        "fa fa-volume-up"></i></a></span><br>
+        I’m working and living in</p><span class="city-name">Berlin</span>
+      </div><audio><source src="media/name.ogg"> <source src="media/name.mp3"></audio>
+      <div class="pure-u-1 clouds">
+        <div class="cloud x1"></div>
+        <div class="cloud x2"></div>
+      </div>
+    </div>
+  </div><a id="about" name="about"></a>
+  <div class="pure-g about">
+    <div class="pure-g wrap">
+      <div class="pure-u-1">
+        <div class="about-me" id="des">
+          <div class="title">
+            about
+          </div>
+          <div class="text">
+            <p>I am Junyu, just finished M.C.S. at TU Dresden and has B.F.A. in industrial design. So I design & code.
+            Worked in public relation, interned in SAP SE as web designer, and co-funder of my studio in China for
+            creating apps and website.</p>
+            <p>Love <i class="fa fa-heart"></i> traveling and good at <strike>drinking</strike> socializing. Can be a
+            good team member and builder :)</p>
+            <p>Looking for a front-end/web design job in Berlin. Check my résumé and projects for more
+            information.</p>
+          </div>
+        </div>
+        <div class="atc-button">
+          <div class="title" id="hb-title">
+            <i class="fa fa-camera"></i> Tegeler See, Berlin
+          </div>
+          <div class="more-less" id="mole">
+            -
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-bg">
+      <video autoplay="" class="fullbg-video" loop="" poster="media/bg-video.jpg"><source src="media/bg-video.mp4"
+      type="video/mp4"></video>
+    </div>
+  </div><a id="works" name="works"></a>
+  <div class="pure-g works">
+    <div class="pure-g wrap">
+      <div class="pure-g pure-u-1 divider">
+        projects
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class="showcase">
+            <img src="images/AMPI.png">
+            <figcaption>
+              <h3>AM Part Indentifier</h3><span>3YOURMIND</span>
+              <p>Lead designer and developer for a new project called AM Part Identifier. Introduced Vue.js to the
+              company and helped the main product team decided switch to Vue.js.</p>
+              <div class="icons">
+								<a href="http://ampi.3yourmind.com/" target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </figcaption>
+          </div>
 				</div>
-			</div>
-		</div>
-		<div class="pure-g">
-			<div class="pure-u-1"><div class="mobile-menu">
-				<div class="spinner-master">
-					<input type="checkbox" id="spinner-form"/>
-					<label for="spinner-form" class="spinner-spin">
-						<div class="spinner diagonal part-1"></div>
-						<div class="spinner horizontal"></div>
-						<div class="spinner diagonal part-2"></div>
-					</label>
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class="showcase">
+            <img src="images/work-1.png">
+            <figcaption>
+              <h3>Master Thesis</h3><span>Technische Universität Dresden</span>
+              <p>Focused on new HTTP/2 protocol, researched how to adapt the current server/client frameworks to
+              support HTTP/2.</p>
+              <div class="icons">
+                <a href="media/jpu_http2proxy.pdf" target="_blank"><i class="fa fa-file-text-o"></i></a> <a href=
+                "media/jpu_http2proxy_def.pdf" target="_blank"><i class="fa fa-file-powerpoint-o"></i></a>
+              </div>
+            </figcaption>
+          </div>
 				</div>
-			</div></div>
-			<div class="pure-u-1" style="z-index:99"><div class="mobile-menu-list" id="mobi-menu">
-				<ul>
-					<li><a href="#about">about</a></li>
-					<li><a href="media/CV_Jpu.pdf" target="_blank">résumé</a></li>
-					<li><a href="#works">projects</a></li>
-					<li><a href="#contact">contact</a></li>
-				</ul>
-			</div></div>
-		</div>
-	</div>
-	<!-- end navi -->
-	<div class="banner">
-		<div class="pure-g wrap">
-			<div class="pure-u-1 pomo">
-				<p>Hi, this is Junyu 
-				<span class="name" id="play-name">/tɕuən-ju/
-				<a><i class="fa fa-volume-up"></i></a>
-				</span>
-				<br/> I’m working and living in </p>
-				<span class="city-name">Berlin</span>
-			</div>
-			<audio>
-				<source src="media/name.ogg"></source>
-				<source src="media/name.mp3"></source>
-			</audio>
-			<div class="pure-u-1 clouds">
-				<div class="cloud x1"></div>
-				<div class="cloud x2"></div>
-			</div>
-		</div>
-	</div>
-	<a name="about"></a>
-	<div class="pure-g about">
-		<div class="pure-g wrap ">
-			<div class="pure-u-1">
-				<div class="about-me" id="des">
-					<div class="title">about</div>
-					<div class="text" >
-					<p>I am Junyu, just finished M.C.S. at TU Dresden and has B.F.A. in industrial design. So I design & code. Worked in public relation, interned in SAP SE as web designer, and co-funder of my studio in China for creating apps and website.</p>
-					<p>Love <i class="fa fa-heart"></i> traveling and good at <strike>drinking</strike> socializing. Can be a good team member and builder :)</p>
-					<p><strike>Looking for a front-end/web design job in Berlin.</strike> Check my résumé and projects for more information.</p>
-					</div>
-					<hr>
-					<div class="resume" onclick="location.href='media/CV_Jpu.pdf';">- Résumé</div>
-					<div class="resume" style="margin-left:10%; " onclick="location.href='#works';">- Projects</div>
-				</div>
-				<div class="atc-button">
-					<div class="title" id="hb-title"><i class="fa fa-camera"></i> Tegeler See, Berlin</div>
-					
-					<div class="more-less" id="mole">-</div>
-				</div>
-			</div>
-		</div>
-		<div class="video-bg">
-			<video loop muted autoplay poster="media/bg-video.jpg" class="fullbg-video">
-				<source src="media/bg-video.mp4" type="video/mp4">
-			</video>
-		</div>
-	</div>
-	<a name="works"></a>
-	<div class="pure-g works">
-		
-		<div class="pure-g wrap">
-			<div class="pure-g pure-u-1 divider">projects</div>
-			<div class="pure-g">
 				<div class="pure-u-1 pure-u-md-1-2">
-					<div class="showcase">
-						<img src="images/work-1.png">
-						<figcaption>
-						<h3>Master Thesis</h3>
-						<span>Technische Universität Dresden</span>
-						<p>Focused on new HTTP/2 protocol, researched how to adapt the current server/client frameworks to support HTTP/2.</p>
-						<div class="icons">
-							<a href="media/jpu_http2proxy.pdf" target="_blank"><i class="fa fa-file-text-o"></i></a>
-							<a href="media/jpu_http2proxy_def.pdf" target="_blank"><i class="fa fa-file-powerpoint-o"></i></a>
-							
-						</div>
-						</figcaption>
-					</div>
+						<div class="showcase">
+								<img src="images/Kotti.png">
+								<figcaption>
+									<h3>Kotti</h3><span>3YOURMIND</span>
+									<p>New design system for 3YOURMIND new main product.</p>
+									<div class="icons">
+										<a href="http://kotti.now.sh/" target="_blank"><i class="fa fa-link"></i></a>
+									</div>
+								</figcaption>
+							</div>
 				</div>
-				<div class="pure-u-1 pure-u-md-1-2">
-					<div class="showcase">
-						<img src="images/work-2.png">
-						<figcaption>
-						<h3>BunnyEgg</h3>
-						<span>Project Manger/Art Director</span>
-						<p>Managed a team of 5 based in China and participated in design & develop of cross platform applications.</p>
-						<div class="icons">
-							<a href="http://www.eyoubika.com/" target="_blank"><i class="fa fa-link"></i></a>
-							<a href="https://itunes.apple.com/app/yi-you-bi-ka/id1057006343" target="_blank"><i class="fa fa-apple"></i></a>
-							<a href="https://www.behance.net/gallery/42261959/Learn-from-develop-design-a-real-project" target="_blank"><i class="fa fa-behance"></i></a>
-						</div>
-						</figcaption>
-					</div>
-				</div>
-				<div class="pure-u-1 pure-u-md-1-2">
-					<div class="showcase">
-						<img src="images/work-3.png">
-						<figcaption>
-						<h3>Logistic</h3>
-						<span>Project Manger/Art Director</span>
-						<p>Cooperated with other two, developed logistics system for int'l shipment. Responsible for front-end UI/UX & back-end architecture.</p>
-						<div class="icons">
-							<a href="https://github.com/pujunyu/logisitic_front" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-							<a href="https://www.behance.net/gallery/42265511/Logistic-Website-Design" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
-							
-						</div>
-						</figcaption>
-					</div>
-				</div>
-				<div class="pure-u-1 pure-u-md-1-2">
-					<div class="showcase">
-						<img src="images/work-4.png">
-						<figcaption>
-						<h3>SAP Support</h3>
-						<span>Web Developer</span>
-						<p>Developed & managed the official SAP customer support website. Participated in CRM application development project.</p>
-						<div class="icons">
-							<a href="http://sapsupport.info/" target="_blank"><i class="fa fa-link"></i></a>
-						</div>
-						</figcaption>
-					</div>
-				</div>
-				</div><!-- end pure-g -->
-			</div>
-		</div>
-		
-		
-		<a name="contact"></a>
-		<div class="contact">
-			<div class="pure-g wrap">
-				<div class="pure-u-1">
-					<div class="divider">contact</div>
-				</div>
-				<div class="pure-u-1" >
-					
-				</div>
-				<div class="pure-u-1">
-					<form action="http://mailthis.to/jpu" method="post">
-						<label for="email">Your Email</label><br/>
-						<input class="recipient-email" type="email" name="email" id="name" placeholder="yourmail@mail.com"/>
-						<p>
-							<i class="fa fa-question-circle" aria-hidden="true"></i> Why you need my email address? <br/>
-							<i class="fa fa-check-circle-o" aria-hidden="true"></i> Your message will send to me via <a href="http://mailthis.to/">MailThis.to</a>. It helps prevent spam emails from bots. <br/>
-							<!--<i class="fa fa-question-circle" aria-hidden="true"></i> I don't trust MailThis.to, what's your email address? <br/>
-							<i class="fa fa-check-circle-o" aria-hidden="true"></i> You can download my <a href="media/CV_Jpu.pdf">résumé</a>. You can find my email there. <br/>-->
-							</p>
-						<label for="message">Message</label>
-						<textarea rows="4" name="message"></textarea>
-						<input type="text" name="_honey" value="" style="display:none">
-						<input type="hidden" name="_after" value="https://ostoc.github.io/message_sent.html">
-						<input class="sendmail" type="submit" value="Send Message" />
-					</form>
-				</div>
-				
-			</div>
-			<div class="background-circle"></div>
-			<div class="sns">
-								<ul>
-									<li><a href="https://www.linkedin.com/in/pujunyu" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-									<li><a href="https://github.com/ostoc" target="_blank"><i class="fa fa-github"></i></a></li>
-									<li><a href="https://instagram.com/ostoc" target="_blank"><i class="fa fa-instagram"></i></a></li>
-								</ul>
-			</div>
-			<footer class="pure-u-1"><a href="https://github.com/ostoc/ostoc.github.io">design & code by Junyu Pu © 2016</a></footer>
-		</div>
-		
-	</body>
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class="showcase">
+            <img src="images/work-2.png">
+            <figcaption>
+              <h3>Caidan</h3><span>Co-fonder / Product Designer</span>
+              <p>Managed a team of 5 based in China and participated in design & develop of cross platform
+              applications.</p>
+              <div class="icons">
+                <a href="https://www.behance.net/gallery/42261959/Learn-from-develop-design-a-real-project" target=
+                "_blank"><i class="fa fa-behance"></i></a>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class="showcase">
+            <img src="images/work-3.png">
+            <figcaption>
+              <h3>CPJ Studio</h3><span>Project Manger / Designer</span>
+              <p>Cooperated with other two, developed logistics system for int'l shipment. Responsible for front-end
+              UI/UX & back-end architecture.</p>
+              <div class="icons">
+                <a href="https://github.com/pujunyu/logisitic_front" target="_blank"><i aria-hidden="true" class=
+                "fa fa-github"></i></a> <a href="https://www.behance.net/gallery/42265511/Logistic-Website-Design"
+                target="_blank"><i aria-hidden="true" class="fa fa-behance"></i></a>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class="showcase">
+            <img src="images/work-4.png">
+            <figcaption>
+              <h3>SAP Support</h3><span>Web Developer</span>
+              <p>Developed & managed the official SAP customer support website. Participated in CRM application
+              development project.</p>
+              <div class="icons">
+                <a href="http://sapsupport.info/" target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </figcaption>
+          </div>
+        </div>
+      </div><!-- end pure-g -->
+    </div>
+  </div><a id="contact" name="contact"></a>
+  <div class="contact">
+    <div class="sns">
+      <ul>
+        <li>
+					<a href="https://www.linkedin.com/in/pujunyu" target="_blank">
+						<i class="fa fa-linkedin-square"></i>
+					</a>
+        </li>
+        <li>
+          <a href="https://github.com/ostoc" target="_blank"><i class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/ostoc" target="_blank"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+    <footer class="pure-u-1">
+      <a href="https://github.com/ostoc/ostoc.github.io">design & code by Junyu Pu © 2016</a>
+    </footer>
+  </div>
+</body>
 </html>
